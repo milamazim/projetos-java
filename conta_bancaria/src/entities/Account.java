@@ -26,12 +26,12 @@ public class Account {
   public String getAccountHolder() {
     return accountHolder;
   }
-
-  // metodos
+  
   public double getBalance() {
     return balance;
   }
 
+  // metodos
   public void deposit(double amount) {
     balance += amount;
   }
