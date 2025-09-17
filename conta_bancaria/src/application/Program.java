@@ -32,12 +32,12 @@ public class Program {
     System.out.println(account);
     System.out.println();
     System.out.print("Enter a deposit value: ");
-    account.setDeposit(sc.nextDouble());
+    account.deposit(sc.nextDouble());
     System.out.println("Updated account data: ");
     System.out.println(account);
     System.out.println();
     System.out.print("Enter a withdraw value: ");
-    account.setWithdraw(sc.nextDouble());
+    account.withdraw(sc.nextDouble());
     System.out.println("Updated account data: ");
     System.out.println(account);
 
