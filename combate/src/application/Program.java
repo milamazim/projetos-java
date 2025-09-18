@@ -5,34 +5,33 @@ import entities.Champion;
 
 public class Program {
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);    
+    Scanner sc = new Scanner(System.in);
+    Champion campeaoA = new Champion();
+    Champion campeaoB = new Champion();
 
     System.out.println("Digite os dados do primeiro campeão: ");
     System.out.print("Nome: ");
-    String nameA = sc.nextLine();
+    campeaoA.setName(sc.nextLine());    
     System.out.print("Vida inicial: ");
-    int lifeA = sc.nextInt();
+    campeaoA.setLife(sc.nextInt());    
     System.out.print("Ataque: ");
-    int attackA = sc.nextInt();
+    campeaoA.setAttack(sc.nextInt());        
     System.out.print("Armadura: ");
-    int armorA = sc.nextInt();
+    campeaoA.setArmor(sc.nextInt());
     sc.nextLine();
     System.out.println();
 
-    Champion campeaoA = new Champion(nameA, lifeA, attackA, armorA);
-
     System.out.println("Digite os dados do segundo campeão: ");
     System.out.print("Nome: ");
-    String nameB = sc.nextLine();
+    campeaoB.setName(sc.nextLine());    
     System.out.print("Vida inicial: ");
-    int lifeB = sc.nextInt();
+    campeaoB.setLife(sc.nextInt());    
     System.out.print("Ataque: ");
-    int attackB = sc.nextInt();
+    campeaoB.setAttack(sc.nextInt());        
     System.out.print("Armadura: ");
-    int armorB = sc.nextInt();
-    System.out.println();
-
-    Champion campeaoB = new Champion(nameB, lifeB, attackB, armorB);
+    campeaoB.setArmor(sc.nextInt());
+    sc.nextLine();
+    System.out.println();    
 
     System.out.print("Quantos turnos você deseja executar? ");
     int turns = sc.nextInt();
