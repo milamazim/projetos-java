@@ -17,23 +17,6 @@ public class Champion {
     return life;
   }
 
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  public void setLife(int life) {
-    this.life = life;
-  }
-
-  public void setAttack(int attack) {
-    this.attack = attack;
-  }
-
-  public void setArmor(int armor) {
-    this.armor = armor;
-  }
-
-
   public void takeDamage(Champion other) {
     
     if (armor > other.attack) {
@@ -44,7 +27,6 @@ public class Champion {
     }
     
   }
-
 
   public String status() {
     if (life > 0) {
