@@ -40,8 +40,7 @@ public class Program {
     }
 
     for (int i=0; i < n; i++) {
-      margem = (precos[i] - custos[i]) / custos[i] * 100;
-      System.out.printf("Margem do item %d: %.2f", i, margem);
+      margem = (precos[i] - custos[i]) / custos[i] * 100;      
 
       if (margem < 10) {
         lucro_abaixo_10 += 1;
