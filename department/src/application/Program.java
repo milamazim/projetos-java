@@ -49,18 +49,18 @@ public class Program {
     
   }
 
-  private static void showReport(Department department){
+  private static void showReport(Department dept){
     System.out.println();
     System.out.println("FOLHA DE PAGAMENTO: ");
-    System.out.println("Departamento " + department.getName() + " = R$ " + String.format("%.2f", department.payroll()));
-    System.out.println("Pagamento realizado no dia " + department.getPayDay());
+    System.out.println("Departamento " + dept.getName() + " = R$ " + String.format("%.2f", dept.payroll()));
+    System.out.println("Pagamento realizado no dia " + dept.getPayDay());
     System.out.println("Funcionários: ");
     
-    for (Employee e : department.getEmployees()) {
+    for (Employee e : dept.getEmployees()) {
       System.out.println(e.getName());
     }
 
-    System.out.println("Para dúvidas favor entrar em contato: " + department.getAddress().getEmail());
+    System.out.println("Para dúvidas favor entrar em contato: " + dept.getAddress().getEmail());
 
   }
 
