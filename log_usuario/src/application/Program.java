@@ -35,6 +35,10 @@ public class Program {
       }
       System.out.println("Total users: " + set.size());
 
+      for (LogEntry le : set) {
+        System.out.println("- " + le.getUsername());
+      }
+
     } catch(IOException e) {
       System.out.println("Error: " + e.getMessage());
     }
